@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Libros</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/arrays.js" defer></script>
+  <script src="js/dom.js" defer></script>
+  <script src="js/eventos.js" defer></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="header__titulo">Aranduka</h1>
+    <form action="" class="contenedor__buscador">
+      <input type="search" id="buscadorInicial" name="buscadorInicial" placeholder="Busque su libro aquí!">
+      <label for="buscadorInicial"><img src="svg/search.svg" alt="Buscador" id="btn__buscadorInicial"> </label>
+    </form>
+    <div class="log__carrito">
+      <a href="shop.html">
+        <button id="carrito">
+          <img src="svg/carrito.svg" alt="carrito">Carrito 
+          <span id="contador__carrito"></span>
+        </button>
+      </a>
+    </div>
+  </header>
+  <main>
+    <div class="contenedor___main">
+      <aside class="contenedor__filtros">
+        <div class="contenido__filtro">
+          <h2>Filtrar</h2>
+          <hr>
+          <div class="contenedor__filtro">
+            <h3>Género</h3>
+            <form action="" class="filtro" id="filtroGenero" name="genero">
+              <label for="genero1"><input type="radio" name="genero" id="genero1" value="FANTÁSTICA">Fantástica </label>
+              <label for="genero2"><input type="radio" name="genero" id="genero2" value="FILOSOFICÁ">Filosofíca </label>
+              <label for="genero3"><input type="radio" name="genero" id="genero3" value="INFANTÍL">Infantil </label>
+              <label for="genero4"><input type="radio" name="genero" id="genero4" value="NARRACIÓN">Narración </label>
+              <label for="genero5"><input type="radio" name="genero" id="genero5" value="REALISMO MÁGICO">Realismo Magico </label>
+              <label for="genero6"><input type="radio" name="genero" id="genero6" value="POESÍA">Poesía </label>
+            </form>
+          </div>
+          <hr>
+          <div class="contenedor__filtro">
+            <h3>Formato</h3>
+            <form action="" class="filtro" id="filtroFormato" name="formato">
+              <label for="formato1"><input type="radio" name="formato" id="formato1" value="LIBRO">Libro </label>
+              <label for="formato2"> <input type="radio" name="formato" id="formato2" value="AUDIOLIBRO">Audiolibro </label>
+            </form>
+          </div>
+        </div>
+      </aside>
+      <section class="contenedor__libros">
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="main__footer">
+      <ul>
+        <li id="titulo">Aranduka</li>
+        <li><a href="">Locales</a></li>
+        <li><a href="">Políticas de privacidad</a></li>
+        <li><a href="">Trabajar con nosotros</a></li>
+      </ul>
+      <ul>
+        <li id="titulo">Guía de compra</li>
+        <li><a href="">Atención al cliente</a></li>
+        <li><a href="">Promociones</a></li>
+        <li><a href="">Promociones Bancarias</a></li>
+        <li><a href="">Costos y tiempos de envío</a></li>
+        <li><a href="">Devoluciones</a></li>
+        <li><a href="">Preguntas frecuentes</a></li>
+        <li><a href=""><strong>Cancelaciones</strong></a></li>
+      </ul>
+      <ul>
+        <li id="titulo">Mi usuario</li>
+        <li><a href="">Estado de compra</a></li>
+        <li><a href="">Registrarse</a></li>
+        <li><a href="">Suscripción a novedades</a></li>
+      </ul>
+      <div class="metodosDePago">
+        <span id="titulo">Métodos de pago</span>
+        <div>
+          <img src="img/VISA.png" alt="Visa">
+          <img src="img/mastercard.jfif" alt="Mastercard">
+        </div>
+      </div>
+    </div>
+    <div class="linkSociales__footer">
+      <span>Síguenos en nuestras redes sociales!</span>
+      <div class="linkSociales">
+        <a href=""><img src="svg/bxl-facebook.svg" alt="Facebook" id="facebook"></img></a>
+        <a href=""><img src="svg/bxl-twitter.svg" alt="Twitter" id="twitter"></img></a>
+        <a href=""><img src="svg/bxl-instagram.svg" alt="Instagram" id="instagram"></img></a>
+        <a href=""><img src="svg/bxl-gmail.svg" alt="Gmail" id="gmail"></img></a>
+        <a href=""><img src="svg/bxl-linkedin.svg" alt="LinkedIn" id="linkedin"></img></a>
+      </div>
+    </div>
+    <div class="copyright__footer">
+      <span>Copyright © 2022 Aranduka. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+</body>
+</html>

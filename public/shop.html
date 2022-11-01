@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carro de Compras</title>
+  <link rel="stylesheet" href="css/shop.css">
+  <script src="js/arrays.js" defer></script>
+  <script src="js/domShop.js" defer></script>
+  <script src="js/eventosShop.js" defer></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1 id="header__titulo">Aranduka</h1>
+		<form action="" class="contenedor__buscador">
+			<input type="search" id="buscadorInicial" name="buscadorInicial" placeholder="Busque su libro aquí!">
+			<label for="buscadorInicial"><img src="svg/search.svg" alt="Buscador" id="btn__buscadorInicial"> </label>
+		</form>
+		<div class="log__carrito">
+			<a href="shop.html">
+				<button id="carrito">
+					<img src="svg/carrito.svg" alt="carrito">Carrito 
+          <span id="contador__carrito"></span>
+				</button>
+			</a>
+		</div>
+	</header>
+  <main>
+    <section>
+      <div class="contenedor__compra">
+      </div>
+      <div class="btn__compra">
+        <a href="index.html"><button>Seguir comprando</button></a>
+        <button id="btn__finalizar">Finalizar compra</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="main__footer">
+      <ul>
+        <li id="titulo">Aranduka</li>
+        <li><a href="">Locales</a></li>
+        <li><a href="">Políticas de privacidad</a></li>
+        <li><a href="">Trabajar con nosotros</a></li>
+      </ul>
+      <ul>
+        <li id="titulo">Guía de compra</li>
+        <li><a href="">Atención al cliente</a></li>
+        <li><a href="">Promociones</a></li>
+        <li><a href="">Promociones Bancarias</a></li>
+        <li><a href="">Costos y tiempos de envío</a></li>
+        <li><a href="">Devoluciones</a></li>
+        <li><a href="">Preguntas frecuentes</a></li>
+        <li><a href=""><strong>Cancelaciones</strong></a></li>
+      </ul>
+      <ul>
+        <li id="titulo">Mi usuario</li>
+        <li><a href="">Estado de compra</a></li>
+        <li><a href="">Registrarse</a></li>
+        <li><a href="">Suscripción a novedades</a></li>
+      </ul>
+      <div class="metodosDePago">
+        <span id="titulo">Métodos de pago</span>
+        <div>
+          <img src="img/VISA.png" alt="Visa">
+          <img src="img/mastercard.jfif" alt="Mastercard">
+        </div>
+      </div>
+    </div>
+    <div class="linkSociales__footer">
+      <span>Síguenos en nuestras redes sociales!</span>
+      <div class="linkSociales">
+        <a href=""><img src="svg/bxl-facebook.svg" alt="Facebook" id="facebook"></img></a>
+        <a href=""><img src="svg/bxl-twitter.svg" alt="Twitter" id="twitter"></img></a>
+        <a href=""><img src="svg/bxl-instagram.svg" alt="Instagram" id="instagram"></img></a>
+        <a href=""><img src="svg/bxl-gmail.svg" alt="Gmail" id="gmail"></img></a>
+        <a href=""><img src="svg/bxl-linkedin.svg" alt="LinkedIn" id="linkedin"></img></a>
+      </div>
+    </div>
+    <div class="copyright__footer">
+      <span>Copyright © 2022 Aranduka. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+</body>
+
+</html>
